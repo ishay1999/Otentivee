@@ -12,6 +12,8 @@
  *
  * This theme, like WordPress, is licensed under the GPL.
  * Use it to make something cool, have fun, and share what you've learned with others.
+
+ changed to rtl by Ishay Frenkel - HowToEvery
  */
 
 
@@ -101,6 +103,8 @@
 		body {
 			padding-left: 4%;
 			padding-right: 4%;
+			direction: rtl;
+			unicode-bidi: embed;
 		}
 
 			.site {
@@ -136,7 +140,7 @@
 		 * Tables
 		 */
 
-			caption { text-align: left; }
+			caption { text-align: right; }
 
 
 
@@ -465,7 +469,7 @@
 	 */
 
 		.site-branding {
-			float: left;
+			float: right; /* changed from left */
 			display: inline-block;
 			margin: 0;
 			color: inherit;
@@ -513,16 +517,17 @@
 	 */
 
 		.main-navigation {
-			float: left;
+			float: right; /* looks better when left */
 			position: relative;
 			display: inline-block;
-			margin-left: 4%;
+			/* margin-left: 4%; */
+			margin-right: 4%; /* added */
 		}
 
 			.main-navigation a:hover,
 			.main-navigation a:active { color: inherit; }
 
-			.main-navigation .menu { float: left; }
+			.main-navigation .menu { float: left; } /* changed from left */
 
 			.main-navigation ul {
 				padding: 0;
@@ -532,7 +537,7 @@
 			}
 
 				.main-navigation li {
-					float: left;
+					float: right; /* looks better when right */
 					position: relative;
 					padding: 0;
 					margin: 0 2em 0 0;
@@ -738,7 +743,7 @@
 	 * Social links menu
 	 */
 
-		.social-links { float: right; }
+		.social-links { float: right; margin-right: 4%; } /* added margin right */
 		.social-links a { opacity: .5; }
 
 			.social-links ul {
@@ -747,7 +752,7 @@
 				overflow: hidden;
 			}
 
-				.social-links li { float: left; }
+				.social-links li { float: right; } /* changed from left */
 
 					.social-links a {
 						padding-left: .62em;
@@ -920,7 +925,7 @@
 
 		.is-singular .site-main > .hentry {
 			position: relative;
-			float: left;
+			float: left; /* looks better when left */
 			width: 62%;
 		}
 
@@ -989,7 +994,7 @@
 		 */
 
 			.column {
-				float: left;
+				float: right; /* changed from left */
 				margin: 0 6% 0 0;
 			}
 			.column.last { margin-right: 0; }
@@ -1098,7 +1103,7 @@
 			.posts { margin: 0 -1%; }
 
 				.posts .hentry {
-					float: left;
+					float: right; /* changed from left */
 					position: relative;
 					width: 31.333%;
 					padding: 1.62rem;
@@ -1175,7 +1180,7 @@
 				}
 
 					.menu-group-header {
-						float: left;
+						float: right; /* changed from left */
 						width: 50%;
 						padding-top: 3.62rem;
 						margin-top: -3.62rem;
@@ -1184,7 +1189,7 @@
 						.menu-group-header:focus { outline: 0; }
 
 					.items .hentry {
-						float: left;
+						float: right; /* changed from left */
 						width: 46%;
 						margin: 0 6% 2% 0;
 					}
@@ -1205,7 +1210,7 @@
 							.single-nova_menu_item .food-menu-item-header .entry-title { margin-bottom: 6%; }
 
 							.food-menu-item-title {
-								float: left;
+								float: right; /* changed from left */
 								max-width: 80%;
 								letter-spacing: 0;
 							}
@@ -1550,7 +1555,7 @@
 		}
 			.footer-widgets .widget,
 			.front-page-widgets-container .widget {
-				float: left;
+				float: right; /* changed from left */
 				width: 21%;
 				margin: 0 2% 3.62rem;
 			}
@@ -1574,7 +1579,7 @@
 
 		.site-info-container { overflow: hidden; }
 
-			.site-info { float: left; }
+			.site-info { float: right; } /* changed from left */
 
 				.site-info a { color: inherit; }
 
@@ -1821,7 +1826,7 @@
 
 				.hentry .rtb-booking-form .date,
 				.hentry .rtb-booking-form .time {
-					float: left;
+					float: right;
 					width: 48%;
 					margin-bottom: 1em;
 				}
